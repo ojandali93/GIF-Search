@@ -3,6 +3,7 @@ const express = require('express');
 
 // App Setup
 const app = express();
+app.use(express.static('public'));
 
 // Middleware
 const handlebars = require('express-handlebars');
